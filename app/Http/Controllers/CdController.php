@@ -44,7 +44,7 @@ class CdController extends Controller
         $res->save();
 
         $request->session()->flash('msg','Data Saved!');
-        return redirect ('/');
+        return redirect ('/admincd');
     }
 
     /**
@@ -87,7 +87,7 @@ class CdController extends Controller
         $res->save();
 
         $request->session()->flash('msg','Data Updated');
-        return redirect ('/');
+        return redirect ('/admincd');
     }
 
     /**

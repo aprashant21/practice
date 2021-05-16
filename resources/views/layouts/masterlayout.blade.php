@@ -4,7 +4,8 @@
 
 	<!-- css -->
 	<link rel="stylesheet" href="/styles.css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
 	<!-- fav-icon -->
 	<link rel="icon" href="/logo.png">
@@ -14,21 +15,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" contetnt="IE=edge">
 
+	<!-- scripts -->
+	<script src="{{ asset('js/app.js') }}" defer></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </head>
 <body>
-<nav class="nav">
-	<a href="/"><img class="logo" src="/logo.png"></a>
-	<ul>
-		<a href="/"><li>HOME</li></a>
-		<a href="/about"><li>ABOUT</li></a>
-		<a href="/product"><li>PRODUCT</li></a>
-		<a href="/login"><li>LOGIN</li></a>
-	</ul>
-</nav>
+@include('nav')
 
 <div class="body">@section('content')
 @show</div>
 
-<footer>©copyright {{date('Y')}} </footer>
+<footer class="blockquote-footer">©copyright {{date('Y')}} </footer>
 </body>
 </html>

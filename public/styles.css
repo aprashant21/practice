@@ -1,5 +1,6 @@
 body{
-	background-image: url(bgimage.jpg);
+	/*background-image: url(bgimage.jpg);*/
+  background-color: lightgrey;
 }
 	.h2title{
 
@@ -34,7 +35,7 @@ text-align: center;
 	height: 90px;
 	width: 90px;
 	float: left;
-	margin-left: 150px
+	margin-left: 200px
 }
 .body{
 	height: 1000px;
@@ -45,6 +46,12 @@ text-align: center;
 	padding:20px;
 	text-align: right;
 	margin: 0 0 0 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
 
 }
 .nav ul {
@@ -58,7 +65,7 @@ list-style: none;
 }
 .nav li{
 	 color:black;
-	padding:20px;
+	 padding:20px;
 }
 .nav li:hover{
 	color:white;
@@ -72,9 +79,10 @@ list-style: none;
 }
 
 footer{
-	background-color: #c7d0d8;
+	background-color: darkgrey;
 	padding:20px;
 	text-align: center;
+  margin-top:120px;
 }
 
 .aboutdiv{

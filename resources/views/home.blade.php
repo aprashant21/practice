@@ -15,6 +15,16 @@
                     @endif
 
                     {{ __('You are logged in') }}
+
+
+                       @if(Auth::user()->id==1)
+                            <form class="" method="post" action="/add">
+                                @csrf
+                                @method('get')
+                                <input class="button" name="add" type="submit" value="ADMIN PANEL">
+                            </form>
+                       @endif
+ 
                 </div>
             </div>
         </div>

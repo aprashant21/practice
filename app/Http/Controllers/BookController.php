@@ -35,7 +35,7 @@ class BookController extends Controller
      */
     public function store(Request $request)
     {
-        $res = new Book;
+            $res = new Book;
             $res->title = $request->input('title');
             $res->firstname = $request->input('fname');
             $res->mainname = $request->input('sname');
