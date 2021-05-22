@@ -12,6 +12,7 @@
 <input Placeholder= "Surname" type="text" name="sname" required=""><br>
 <input placeholder="Price" type="text" name="price" required=""><br>
 <input placeholder="pages" type="text" name="pages" required=""><br>
+<input class="imagesbrowser" type="file" accept="images/*" name="imgbook"/><br>
 <input class="button" type="submit" name="submit" value="Add New"><br>
 
 </form>

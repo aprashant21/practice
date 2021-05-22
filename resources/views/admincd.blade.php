@@ -15,6 +15,7 @@
         <td>MainName</td>
         <td>Price($)</td>
         <td>Playlength(min)</td>
+        <td>Images</td>
         <td>Action</td>
     </tr>
     @foreach($cdArr as $cd)
@@ -25,6 +26,8 @@
         <td>{{$cd->mainname}}</td>
         <td>{{$cd->price}}</td>
         <td>{{$cd->playlength}}</td>
+        <td>{{$cd->imagecd}}</td>
+
         <td>
             <a href="cd_edit/{{$cd->id}}">SELECT</a>
         </td>

@@ -14,7 +14,8 @@ class BookController extends Controller
      */
     public function index()
     {
-        //
+       return view('/books')->with('bookArr', Book::all() );
+
     }
 
     /**
@@ -41,7 +42,9 @@ class BookController extends Controller
             $res->mainname = $request->input('sname');
             $res->price = $request->input('price');
             $res->numpages = $request->input('pages');
-            $res->save();
+            $res->imagebook = $request->input('imgbook');
+
+        $res->save();
 
         $request->session()->flash('msg','Data Saved!');
         return redirect ('/adminbook');
@@ -84,6 +87,8 @@ class BookController extends Controller
         $res->mainname = $request->input('sname');
         $res->price = $request->input('price');
         $res->numpages = $request->input('pages');
+        $res->imagebook = $request->input('imgbook');
+
         $res->save();
 
         $request->session()->flash('msg','Data Updated');

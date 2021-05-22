@@ -38,15 +38,22 @@ Route::get('/admincd', function () {
     return view('admincd');
 });
 
-
+Route::get('/books', function () {
+    return view('books');
+});
+Route::get('/cds', function () {
+    return view('cds');
+});
 
 Route::post('/book_submit',[BookController::class,'store']);
+Route::get('/books',[BookController::class,'index']);
 Route::get('/adminbook',[BookController::class,'show']);
 Route::get('/book_edit/{id}', [BookController::class, 'edit']);
 Route::put('/book_update/{id}', [BookController::class, 'update']);
 Route::delete('/book_delete/{id}', [BookController::class, 'destroy']);
 
 Route::post('/cd_submit',[CdController::class,'store']);
+Route::get('/cds',[CdController::class,'index']);
 Route::get('/admincd',[CdController::class,'show']);
 Route::get('/cd_edit/{id}', [CdController::class, 'edit']);
 Route::put('/cd_update/{id}', [CdController::class, 'update']);

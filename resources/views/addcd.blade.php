@@ -12,6 +12,7 @@
 <input Placeholder= "mainname/Band" type="text" name="sname"><br>
 <input placeholder="Price" type="text" name="price"><br>
 <input placeholder="playlength" type="text" name="playlength" ><br>
+<input class="imagesbrowser" type="file" accept="images/*" name="imgcd"/><br>
 <input class="button" type="submit" name="submit" value="Add New"><br>
 
 </form>

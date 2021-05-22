@@ -12,6 +12,7 @@
 <label>Main Name :</label><input type="text" name="sname" value="{{$bookArr->mainname}}"><br>
 <label>Price :</label><input type="text" name="price" value="{{$bookArr->price}}"><br>
 <label>Pages :</label><input type="text" name="pages" value="{{$bookArr->numpages}}"><br>
+<input type="text" name="imgbook" value="{{$bookArr->imagebook}}"><br>
 <input class="button" type="submit" name="submit" value="UPDATE"><br>
 </form>
 <form method="post" action="/book_delete/{{$bookArr['id']}}">

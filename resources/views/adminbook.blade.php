@@ -15,6 +15,7 @@
         <td>MainName</td>
         <td>Price($)</td>
         <td>Pages</td>
+        <td>Images</td>
         <td>Action</td>
     </tr>
     @foreach($bookArr as $book)
@@ -25,6 +26,8 @@
         <td>{{$book->mainname}}</td>
         <td>{{$book->price}}</td>
         <td>{{$book->numpages}}</td>
+        <td>{{$book->imagebook}}</td>
+
         <td>
             <a href="book_edit/{{$book->id}}">SELECT</a>
         </td>

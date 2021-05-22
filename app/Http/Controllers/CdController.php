@@ -14,7 +14,7 @@ class CdController extends Controller
      */
     public function index()
     {
-        //
+        return view('/cds')->with('cdArr', Cd::all() );
     }
 
     /**
@@ -41,6 +41,8 @@ class CdController extends Controller
         $res->mainname = $request->input('sname');
         $res->price = $request->input('price');
         $res->playlength = $request->input('playlength');
+        $res->imagecd = $request->input('imgcd');
+
         $res->save();
 
         $request->session()->flash('msg','Data Saved!');
@@ -84,6 +86,8 @@ class CdController extends Controller
         $res->mainname = $request->input('sname');
         $res->price = $request->input('price');
         $res->playlength = $request->input('playlength');
+        $res->imagecd = $request->input('imgcd');
+
         $res->save();
 
         $request->session()->flash('msg','Data Updated');

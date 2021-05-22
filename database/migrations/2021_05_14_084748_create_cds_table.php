@@ -20,6 +20,7 @@ class CreateCdsTable extends Migration
             $table->string('mainname');
             $table->integer('price');
             $table->integer('playlength');
+            $table->string('imagecd');
             $table->timestamps();
         });
     }
